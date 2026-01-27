@@ -9,8 +9,6 @@ Kubeturbo is installed on-prem.<br/>
 
 ## Offline Kubeturbo operator install, no ODM.</br>
 
-This scenario is configured by the Turbonomic target wizard on Turbonomic UI.<br/>
-
 Operator yaml files are cloned to the bastion host from github repo and applied to the target cluster.<br/>
 Operator CR is cloned from github repo, configured, and deployed.<br/>
 
@@ -22,7 +20,7 @@ bastion host on-prem -> target cluster on-prem.<br/>
 on-prem target cluster kubeturbo -> proxy -> turbonomic Saas.<br/>
 ```
 
-Steps<br/>
+Steps with Turbonomic target wizard in Turbonomic UI<br/>
 Mirror container images.<br/>
 Use Turbonomic target wizard in Turbonomic UI to configure and download operator installation script.<br/>
 Login to the target cluster.<br>
