@@ -29,6 +29,12 @@ Run installation script.<br/>
 
 ## Offline Kubeturbo helm chart install.<br/>
 
+Configure on-prem helm repository as a proxy to external helm repository.<br/>
+
+Pull Kubeturbo helm chart from on-prem helm repo.<br/>
+Configure helm chart values file.<br/>
+Install Kubeturbo helm chart on the target cluster.<br/>
+
 ```
 on-prem helm repository -> proxy to external helm repository
 
