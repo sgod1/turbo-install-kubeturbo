@@ -3,11 +3,11 @@
 Turbonomic is installed as Saas.<br/>
 Kubeturbo is installed on-prem.<br/>
 
-Mirror Kubeturbo container images to private container registry.<br/>
+## Mirror Kubeturbo container images to private container registry.<br/>
 ``
 ``
 
-Offline operator install, no ODM.</br>
+## Offline Kubeturbo operator install, no ODM.</br>
 
 This scenario is configured by the Turbonomic target wizard on Turbonomic UI.<br/>
 
@@ -21,3 +21,19 @@ bastion host on-prem -> target cluster on-prem.<br/>
 
 on-prem target cluster kubeturbo -> proxy -> turbonomic Saas.<br/>
 ```
+
+Steps<br/>
+Mirror container images.<br/>
+Use Turbonomic target wizard in Turbonomic UI to configure and download operator installation script.<br/>
+Login to the target cluster.<br>
+Run installation script.<br/>
+
+
+## Offline Kubeturbo helm chart install.<br/>
+
+```
+on-prem helm repository -> proxy to external helm repository
+
+on-prem target cluster kubeturbo -> proxy -> turbonomic Saas.<br/>
+```
+
