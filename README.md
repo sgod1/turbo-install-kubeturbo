@@ -20,7 +20,7 @@ bastion host on-prem -> target cluster on-prem.<br/>
 on-prem target cluster kubeturbo -> proxy -> turbonomic Saas.<br/>
 ```
 
-Steps with Turbonomic target wizard in Turbonomic UI<br/>
+Turbonomic target wizard in Turbonomic UI<br/>
 Mirror container images.<br/>
 Use Turbonomic target wizard in Turbonomic UI to configure and download operator installation script.<br/>
 Login to the target cluster.<br>
