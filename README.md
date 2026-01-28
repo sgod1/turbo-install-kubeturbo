@@ -15,19 +15,19 @@ Update `cluster.env` file with required variables.<br/>
 
 Set `KUBETURBO_VERSION` to a version matching Turbonomic deployment.<br/>
 ```
-# or set ENV_KUBETURBO_VERSION
+# env var ENV_KUBETURBO_VERSION
 KUBETURBO_VERSION=""
 
 IMG_OS="linux"
 IMG_ARCH="amd64"
 
-# or set env var ENV_KUBETURBO_REGISTRY
+# env var ENV_KUBETURBO_REGISTRY
 KUBETURBO_REGISTRY=""
 
-# or set env var ENV_KUBETURBO_REGISTRY_USERNAME
+# env var ENV_KUBETURBO_REGISTRY_USERNAME
 KUBETURBO_REGISTRY_USERNAME=""
 
-# or set env var KUBETURBO_REGISTRY_PASSWORD
+# env var KUBETURBO_REGISTRY_PASSWORD
 KUBETURBO_REGISTRY_PASSWORD=""
 ```
 Mirror images:<br/>
