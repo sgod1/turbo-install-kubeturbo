@@ -56,7 +56,7 @@ Deploy `Kubeturbo` operator with *Turbonomic target wizard* in Turbonomic UI<br/
 
 Copy generated script to the `bastion` host.<br/>
 
-On the 'bastion host`<br/>
+On the `bastion host`<br/>
 - Make sure script `KUBETURBO_VERSION` and `KUBETURBO_REGISTRY` match values in `cluster.env` and mirror container images.<br/>
 - Run installation script.<br/>
 
