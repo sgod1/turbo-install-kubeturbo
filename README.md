@@ -53,7 +53,7 @@ Login to the target cluster.<br>
 Run installation script.<br/>
 
 
-## Offline Kubeturbo helm chart install.<br/>
+### Offline Kubeturbo helm chart install.<br/>
 
 Configure on-prem helm repository as a proxy to external helm repository.<br/>
 
