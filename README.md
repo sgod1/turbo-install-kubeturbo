@@ -56,9 +56,9 @@ Deploy `Kubeturbo` operator with *Turbonomic target wizard* in Turbonomic UI<br/
 
 Copy generated script to the `bastion` host.<br/>
 
-Make sure script `KUBETURBO_VERSION` and `KUBETURBO_REGISTRY` match values in `cluster.env` and mirror container images.<br/>
+Make sure script `KUBETURBO_VERSION` and `KUBETURBO_REGISTRY` match values in `cluster.env` and mirror container images from the `bastion host`.<br/>
 
-Run installation script.<br/>
+On the `bastion host` Run installation script.<br/>
 
 ### Offline Kubeturbo helm chart install.<br/>
 
