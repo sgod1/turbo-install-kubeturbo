@@ -48,15 +48,15 @@ on-prem target cluster kubeturbo -> proxy -> turbonomic Saas.
 ```
 
 Deploy Kubeturbo operator with *Turbonomic target wizard* in Turbonomic UI<br/>
-Log into Turbonomic UI and navigate to `Settings/Target Configuration/Add Target/Kubernetes`.<br/>
-Define cluster name.<br/>
-Define private image repository and credentials.<br/>
-Define proxy hostname, port, and credentials.<br/>
-Download generated script.<br/>
+- Log into Turbonomic UI and navigate to `Settings/Target Configuration/Add Target/Kubernetes`.<br/>
+- Set cluster name.<br/>
+- Set private image repository and credentials.<br/>
+- Set proxy hostname, port, and credentials.<br/>
+- Download generated script.<br/>
 
-Copy generated script to the bastion host.<br/>
+Copy generated script to the `bastion` host.<br/>
 
-Make sure that Kubeturbo version and private registry matches values in `cluster.env` and mirror container images.<br/>
+Make sure that Kubeturbo version and private registry match values in `cluster.env` and mirror container images.<br/>
 
 Run installation script.<br/>
 
