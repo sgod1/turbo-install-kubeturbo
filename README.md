@@ -4,24 +4,50 @@ Turbonomic is installed as Saas.<br/>
 Kubeturbo is installed to on-prem target cluster.<br/>
 
 ### Mirror Kubeturbo container images to private container registry.<br/>
-``
-``
+Change to the `operator` directory.<br/>
+
+Check available kubeturbo versions:<br/>
+```
+show_release_versions.sh
+```
+
+Update `cluster.env` file with required variables.<br/>
+
+Set `KUBETURBO_VERSION` to a version matching Turbonomic deployment.<br/>
+```
+# or set ENV_KUBETURBO_VERSION
+KUBETURBO_VERSION=""
+
+IMG_OS="linux"
+IMG_ARCH="amd64"
+
+# or set env var ENV_KUBETURBO_REGISTRY
+KUBETURBO_REGISTRY=""
+
+# or set env var ENV_KUBETURBO_REGISTRY_USERNAME
+KUBETURBO_REGISTRY_USERNAME=""
+
+# or set env var KUBETURBO_REGISTRY_PASSWORD
+KUBETURBO_REGISTRY_PASSWORD=""
+```
+Mirror images:<br/>
+```
+mirror-images.sh
+```
 
 ### Offline Kubeturbo operator install, no ODM.</br>
 
-Operator yaml files are cloned to the bastion host from github repo and applied to the target cluster.<br/>
-Operator CR is cloned from github repo, configured, and deployed.<br/>
-
 ```
-bastion host on-prem -> ibm github repo, ibm container registry.<br/>
+bastion host on-prem -> ibm github repo, ibm container registry.
 
-bastion host on-prem -> target cluster on-prem.<br/>
+bastion host on-prem -> target cluster on-prem.
 
-on-prem target cluster kubeturbo -> proxy -> turbonomic Saas.<br/>
+on-prem target cluster kubeturbo -> proxy -> turbonomic Saas.
 ```
 
-Turbonomic target wizard in Turbonomic UI<br/>
+Deploy Kubeturbo operator with Turbonomic target wizard in Turbonomic UI<br/>
 Mirror container images.<br/>
+
 Use Turbonomic target wizard in Turbonomic UI to configure and download operator installation script.<br/>
 Login to the target cluster.<br>
 Run installation script.<br/>
