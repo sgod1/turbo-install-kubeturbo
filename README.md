@@ -4,6 +4,8 @@ Turbonomic is installed as `Saas`.<br/>
 Kubeturbo is installed to `on-prem` target cluster.<br/>
 
 ### Mirror Kubeturbo container images to private container registry.<br/>
+Mirror container images before deploying Kubeturbo operator.<br/>
+
 Change to the `operator` directory.<br/>
 
 Check available kubeturbo versions:<br/>
@@ -45,13 +47,18 @@ bastion host on-prem -> target cluster on-prem.
 on-prem target cluster kubeturbo -> proxy -> turbonomic Saas.
 ```
 
-Deploy Kubeturbo operator with Turbonomic target wizard in Turbonomic UI<br/>
-Mirror container images.<br/>
+Deploy Kubeturbo operator with *Turbonomic target wizard* in Turbonomic UI<br/>
+Log into Turbonomic UI and navigate to `Settings/Target Configuration/Add Target/Kubernetes`.<br/>
+Define cluster name.<br/>
+Define private image repository and credentials.<br/>
+Define proxy hostname, port, and credentials.<br/>
+Download generated script.<br/>
 
-Use Turbonomic target wizard in Turbonomic UI to configure and download operator installation script.<br/>
-Login to the target cluster.<br>
+Copy generated script to the bastion host.<br/>
+
+Make sure that Kubeturbo version and private registry matches values in `cluster.env` and mirror container images.<br/>
+
 Run installation script.<br/>
-
 
 ### Offline Kubeturbo helm chart install.<br/>
 
