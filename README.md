@@ -42,6 +42,8 @@ mirror-images.sh
 ```
 bastion host on-prem -> ibm github repo, ibm container registry.
 
+bastion host on-prem -> private kubeturbo image registry.
+
 bastion host on-prem -> target cluster on-prem.
 
 on-prem target cluster kubeturbo -> proxy -> turbonomic Saas.
