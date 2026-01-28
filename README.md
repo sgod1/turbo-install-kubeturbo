@@ -66,8 +66,7 @@ On the `bastion host`<br/>
 
 Configure on-prem helm repository as a proxy to external helm repository.<br/>
 
-Pull Kubeturbo helm chart from on-prem helm repo.<br/>
-Configure helm chart values file.<br/>
+Configure `cluster.env` to customize values file.<br/>
 Install Kubeturbo helm chart on the target cluster.<br/>
 
 ```
