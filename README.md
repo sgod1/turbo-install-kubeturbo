@@ -1,7 +1,7 @@
 # Kubeturbo offline install on k8s cluster.
 
-Turbonomic is installed as Saas.<br/>
-Kubeturbo is installed to on-prem target cluster.<br/>
+Turbonomic is installed as `Saas`.<br/>
+Kubeturbo is installed to `on-prem` target cluster.<br/>
 
 ### Mirror Kubeturbo container images to private container registry.<br/>
 Change to the `operator` directory.<br/>
