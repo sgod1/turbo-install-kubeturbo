@@ -4,7 +4,7 @@ Turbonomic is installed as `Saas`.<br/>
 Kubeturbo is installed to `on-prem` target cluster.<br/>
 
 ### Mirror Kubeturbo container images to private container registry.<br/>
-Mirror container images from `bastion host` before deploying Kubeturbo operator.<br/>
+Mirror container images from the `bastion host` before deploying Kubeturbo operator.<br/>
 
 Change to the `operator` directory.<br/>
 
