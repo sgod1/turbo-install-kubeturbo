@@ -6,7 +6,7 @@ bundle_yaml="./_yaml/operator_bundle.yaml"
 _bundle_yaml="./_yaml/_operator_bundle.yaml"
 
 if [[ ! -f $bundle_yaml ]]; then
-   echo $bundlefile_yaml file not found
+   echo $bundle_yaml file not found
    exit 1
 fi
 
